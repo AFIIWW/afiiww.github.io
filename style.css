@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #111418;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navigasi Rafi */
+.rafi-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #111418;
+    border-bottom: 1px solid #332d16;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.rafi-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.rafi-code-icon {
+    color: #e5b324;
+}
+
+.rafi-navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.rafi-navbar nav a {
+    color: #9aa4b2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.rafi-navbar nav a:hover {
+    color: #e5b324;
+}
+
+/* Section Utama (Hero) */
+.rafi-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    background-color: #111418;
+}
+
+.rafi-hero-content {
+    max-width: 50%;
+}
+
+.rafi-greeting {
+    color: #e5b324;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.rafi-hero-content h1 {
+    font-size: 3rem;
+    color: #e5b324;
+    margin: 10px 0;
+}
+
+.rafi-subtitle {
+    font-size: 1.2rem;
+    color: #9aa4b2;
+    margin-bottom: 15px;
+}
+
+.rafi-description {
+    color: #9aa4b2;
+    margin-bottom: 30px;
+}
+
+.rafi-hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.rafi-btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.rafi-btn-primary {
+    background-color: #e5b324;
+    color: #111111;
+}
+
+.rafi-btn-primary:hover {
+    background-color: #c49619;
+}
+
+.rafi-btn-secondary {
+    background-color: transparent;
+    color: #e5b324;
+    border: 2px solid #e5b324;
+}
+
+.rafi-btn-secondary:hover {
+    background-color: #e5b324;
+    color: #111111;
+}
+
+.rafi-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Simbol Ikon >_ */
+.logo-icon {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.chevron {
+    color: #ff9d00;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 1;
+    font-family: monospace, sans-serif;
+}
+
+.underscore {
+    color: #ff9d00;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 0.5;
+    font-family: monospace, sans-serif;
+}
+
+/*-- ABOUT ME SECTION*/
+.rafi-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.rafi-section {
+    padding: 60px 0;
+    background-color: #0d1117; /* Background Hitam Gelap */
+    color: #f1f5f9;
+}
+
+/* WADAH GRID KIRI (TEKS) DAN KANAN (FOTO) */
+    .rafi-about-wrapper {
+    display: grid !important;
+    grid-template-columns: 1.3fr 0.7fr !important; /* 65% Kiri (Teks), 35% Kanan (Foto) */
+    gap: 40px !important;
+    align-items: start !important;
+}
+
+/* STYLING KOLOM KIRI (TEKS) */
+    .rafi-section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.rafi-section-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #f59e0b; /* Garis Aksen Emas */
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+.rafi-norse-quote {
+    background-color: #161b22;
+    border-left: 4px solid #f59e0b;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.rafi-quote-text {
+    font-style: italic;
+    color: #f59e0b;
+    font-weight: 600;
+    font-size: 0.92rem;
+    margin-bottom: 4px;
+}
+
+.rafi-quote-sub {
+    font-size: 0.82rem;
+    color: #94a3b8;
+}
+
+.rafi-text-p {
+    font-size: 0.92rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.rafi-fail-list {
+    list-style: none;
+    margin: 14px 0;
+    padding: 0;
+}
+
+.rafi-fail-list li {
+    color: #ef4444;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rafi-meta-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 25px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.rafi-meta-info span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rafi-meta-info i {
+color: #f59e0b;
+}
+
+/* STYLING KOLOM KANAN (FOTO) */
+.rafi-about-image-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rafi-profile-img {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: auto !important;
+    border-radius: 16px;
+    border: 3px solid #f59e0b; /* Bingkai Emas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+/* RESPONSIF LAYOUT HP */
+@media (max-width: 850px) {
+.rafi-about-wrapper {
+    grid-template-columns: 1fr !important; /* Menjadi 1 Kolom saat Layar HP */
+}
+
+.rafi-about-image-box {
+        justify-content: center;
+    }
+}
+
+/* Teks TARUMANAGARA */
+.logo-text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+}
+
+.rafi-laptop-illustration {
+    width: 280px;
+    height: 180px;
+    background-color: #1c2127;
+    border: 3px solid #e5b324;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e5b324;
+}
+
+
+
+
+/* Section Footer */
+.rafi-footer {
+    background-color: #0b0d10;
+    border-top: 2px solid #e5b324;
+    padding: 40px 8% 20px;
+}
+
+.rafi-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.rafi-footer-brand h3 {
+    color: #e5b324;
+}
+
+.rafi-footer-brand p {
+    color: #9aa4b2;
+    font-size: 0.9rem;
+}
+
+.rafi-footer-contact p {
+    color: #9aa4b2;
+    font-size: 0.9rem;
+}
+
+.rafi-footer-bottom {
+    text-align: center;
+    color: #9aa4b2;
+    font-size: 0.85rem;
+    border-top: 1px solid #1c2127;
+    padding-top: 20px;
+}
+
+/* Section Keahlian */
+.rafi-skills {
+    padding: 80px 8%;
+    background-color: #111418;
+}
+
+.rafi-skills h2 {
+    font-size: 2.2rem;
+    color: #e5b324;
+    margin-bottom: 30px;
+}
+
+.rafi-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Kolom sejajar di desktop */
+    gap: 20px;
+}
+
+.rafi-skill-card {
+    background-color: #1c2127;
+    border: 1px solid #2c343e;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.rafi-skill-card:hover {
+    border-color: #e5b324;
+    color: #e5b324;
+}
+
+/* Section Proyek */
+.rafi-projects {
+    padding: 80px 8%;
+    background-color: #171b21;
+}
+
+.rafi-projects h2 {
+    font-size: 2.2rem;
+    color: #e5b324;
+    margin-bottom: 30px;
+}
+
+.rafi-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Mengunci persis 4 kolom sejajar */
+    gap: 20px;
+}
+
+.rafi-project-card {
+    background-color: #1c2127;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #2c343e;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.rafi-project-card:hover {
+    border-color: #e5b324;
+    transform: translateY(-4px);
+}
+
+/* Wadah Gambar (Membatasi Tinggi) */
+.rafi-project-img {
+    width: 100%;
+    height: 140px; /* Tinggi kotak foto */
+    overflow: hidden;
+    background-color: #242b35;
+}
+
+/* Mengunci Gambar agar tidak meleber/gepeng */
+.rafi-project-img img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block;
+}
+
+.rafi-project-info {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.rafi-project-info h3 {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.rafi-project-info p {
+    color: #9aa4b2;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.rafi-project-info a {
+    color: #e5b324;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Responsif untuk Layar Tablet dan HP */
+@media (max-width: 900px) {
+    .rafi-skills-grid,
+    .rafi-projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom di tablet */
+    }
+}
+
+@media (max-width: 550px) {
+    .rafi-skills-grid,
+    .rafi-projects-grid {
+        grid-template-columns: 1fr; /* 1 kolom di HP */
+    }
+}
