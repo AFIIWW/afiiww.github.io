@@ -276,16 +276,6 @@ color: #f59e0b;
     object-fit: cover;
 }
 
-/* RESPONSIF LAYOUT HP */
-@media (max-width: 850px) {
-.rafi-about-wrapper {
-    grid-template-columns: 1fr !important; /* Menjadi 1 Kolom saat Layar HP */
-}
-
-.rafi-about-image-box {
-        justify-content: center;
-    }
-}
 
 /* Teks TARUMANAGARA */
 .logo-text {
@@ -309,8 +299,6 @@ color: #f59e0b;
     font-weight: bold;
     color: #e5b324;
 }
-
-
 
 
 /* Section Footer */
@@ -463,17 +451,3 @@ color: #f59e0b;
     gap: 6px;
 }
 
-/* Responsif untuk Layar Tablet dan HP */
-@media (max-width: 900px) {
-    .rafi-skills-grid,
-    .rafi-projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 kolom di tablet */
-    }
-}
-
-@media (max-width: 550px) {
-    .rafi-skills-grid,
-    .rafi-projects-grid {
-        grid-template-columns: 1fr; /* 1 kolom di HP */
-    }
-}
